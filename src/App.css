@@ -4,6 +4,15 @@
 
 h1{
   color:#04AA6D;
+  font-size: 50px;
+}
+
+h2 {
+  color:white;
+}
+
+hr {
+  margin-top:25px;
 }
 
 /* Tables Styling from W3 Schools */
@@ -36,7 +45,6 @@ th {
 }
 
 form {
-  padding-top: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -58,8 +66,13 @@ input {
 button {
   background-color: #04AA6D;
   color: #fff;
-font-weight: bolder;
-font-size: larger;
-border-radius: 15px;
-padding:10px
+  font-weight: bolder;
+  font-size: larger;
+  border-radius: 15px;
+  padding:10px;
+}
+
+#searchBar{
+  margin-bottom: 15px;
+  font-size: xx-large;
 }

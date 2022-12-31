@@ -4,6 +4,7 @@ import './App.css';
 import Header from './components/Header/Header';
 import Phonebook from './components/Phonebook/Phonebook';
 import NewForm from './components/NewForm/NewForm';
+import SearchBar from './components/SearchBar/SearchBar';
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
   return (
     <>
       <Header/>
+      <SearchBar/>
       <Phonebook phonebook={phonebook}/>
       <NewForm addContact={addContact}/>
     </>
