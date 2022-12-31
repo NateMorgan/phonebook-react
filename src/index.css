@@ -5,7 +5,44 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #313638;
 }
+
+h1{
+  color:#04AA6D;
+}
+
+/* Tables Styling from W3 Schools */
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #000;
+  padding: 8px;
+  color: white;
+}
+
+tr:nth-child(even){background-color: #f2f2f2;}
+
+tr:hover {
+  background-color: #888;
+  font-weight: bolder;
+}
+
+th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
