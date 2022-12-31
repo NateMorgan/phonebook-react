@@ -1,3 +1,5 @@
+import Contact from "../Contact/Contact";
+
 const Phonebook = (props) => {
   return ( 
     <table>
@@ -9,11 +11,9 @@ const Phonebook = (props) => {
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td> Morgan </td>
-          <td> Nathaniel </td>
-          <td> 123-456-7890 </td>
-        </tr>
+        {props.phonebook.map(contact =>
+          <Contact contact={contact}/>
+        )}
       </tbody>
     </table>
   );
