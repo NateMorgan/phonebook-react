@@ -4,7 +4,7 @@ const Phonebook = (props) => {
   return ( 
     <>
       <hr/>
-      <h2>Contacts</h2>
+      <h2>Contacts: {props.phonebook.length}</h2>
       <table>
         <thead>
           <tr>
@@ -14,9 +14,19 @@ const Phonebook = (props) => {
           </tr>
         </thead>
         <tbody>
-          {props.phonebook.map(contact =>
-            <Contact key={contact.phoneNumber} contact={contact}/>
-            )}
+          { props.phonebook.length > 0 ?
+            <>
+            {props.phonebook.map(contact =>
+              <Contact key={contact.phoneNumber} contact={contact}/>
+              )}
+            </>
+          :
+            <tr id='noContacts'>
+              <td> No </td>
+              <td> Contacts </td>
+              <td> Found </td>
+            </tr>
+          }
         </tbody>
       </table>
     </>

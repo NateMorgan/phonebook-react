@@ -76,3 +76,10 @@ button {
   margin-bottom: 15px;
   font-size: xx-large;
 }
+
+#noContacts{
+  color:white;
+  font-size: large;
+  text-align: center;
+  background-color:darkred;
+}
