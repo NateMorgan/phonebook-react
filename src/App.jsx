@@ -15,12 +15,15 @@ function App() {
     }
   ])
 
+  const addContact = (newContact) => {
+    setPhonebook([...phonebook,newContact])
+  }
 
   return (
     <>
       <Header/>
       <Phonebook phonebook={phonebook}/>
-      <NewForm/>
+      <NewForm addContact={addContact}/>
     </>
   );
 }

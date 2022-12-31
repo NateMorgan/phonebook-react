@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState,useEffect } from "react"
 
 const NewForm = (props) => {
 
@@ -12,6 +12,14 @@ const NewForm = (props) => {
 
   const handleSubmit = (e) => {
     e.preventDefault()
+    props.addContact(formData)
+    // setFormData(    
+    //   {
+    //     firstName:'',
+    //     lastName:'',
+    //     phoneNumber:''
+    //   }
+    // )
   }
 
   const handleChange = (e) => {

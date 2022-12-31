@@ -12,7 +12,7 @@ const Phonebook = (props) => {
       </thead>
       <tbody>
         {props.phonebook.map(contact =>
-          <Contact contact={contact}/>
+          <Contact key={contact.phoneNumber} contact={contact}/>
         )}
       </tbody>
     </table>
