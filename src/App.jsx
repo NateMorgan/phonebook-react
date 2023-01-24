@@ -16,17 +16,17 @@ function App() {
       phoneNumber: '123-456-7890'
     },
     {
-      firstName:'Bailey',
+      firstName:'Hugo',
       lastName:'Stine',
       phoneNumber: '098-765-4321'
     },
     {
-      firstName:'Jess',
+      firstName:'Larry',
       lastName:'Landis',
       phoneNumber: '068-725-4391'
     },
     {
-      firstName:'Damian',
+      firstName:'Bobby B',
       lastName:'Bdzyra',
       phoneNumber: '168-724-5390'
     }
